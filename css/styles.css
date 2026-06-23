@@ -1,0 +1,227 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f3f4f6;
+}
+
+.container{
+display:flex;
+min-height:100vh;
+}
+
+.sidebar{
+width:260px;
+background:#111827;
+color:white;
+padding:20px;
+}
+
+.logo-box{
+text-align:center;
+margin-bottom:30px;
+}
+
+.logo-box img{
+width:140px;
+margin-bottom:10px;
+}
+
+.logo-box h2{
+font-size:22px;
+}
+
+.menu{
+list-style:none;
+}
+
+.menu li{
+padding:15px;
+margin-bottom:10px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.menu li:hover,
+.menu .active{
+background:#f59e0b;
+color:black;
+}
+
+.menu i{
+margin-right:10px;
+}
+
+.main-content{
+flex:1;
+padding:30px;
+}
+
+.topbar{
+margin-bottom:25px;
+}
+
+.topbar h1{
+color:#111827;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.card{
+    background:white;
+    border-radius:8px;
+    padding:8px;
+    text-align:center;
+    box-shadow:0 1px 5px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin:0;
+    font-size:11px;
+    color:#6b7280;
+}
+
+.card span{
+    display:block;
+    margin-top:4px;
+    font-size:22px;
+    font-weight:700;
+}
+.formulario{
+background:white;
+padding:25px;
+border-radius:15px;
+margin-top:30px;
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.formulario h2{
+margin-bottom:20px;
+}
+
+.formulario form{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+padding:12px;
+border:1px solid #d1d5db;
+border-radius:8px;
+font-size:15px;
+}
+
+.formulario textarea{
+grid-column:1/3;
+height:100px;
+resize:none;
+}
+
+.formulario button{
+grid-column:1/3;
+background:#f59e0b;
+border:none;
+padding:14px;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+font-size:16px;
+}
+
+.formulario button:hover{
+opacity:.9;
+}
+.tabla-section{
+background:white;
+padding:25px;
+border-radius:15px;
+margin-top:30px;
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.tabla-section h2{
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#111827;
+color:white;
+padding:12px;
+text-align:left;
+}
+
+td{
+padding:12px;
+border-bottom:1px solid #e5e7eb;
+}
+
+tr:hover{
+background:#f9fafb;
+}
+.tabla-section button{
+padding:8px 12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.tabla-section button:hover{
+opacity:.9;
+}
+.estado-pendiente{
+    background:#fef3c7;
+    color:#92400e;
+    padding:5px 10px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.estado-camino{
+    background:#dbeafe;
+    color:#1e40af;
+    padding:5px 10px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.estado-finalizado{
+    background:#dcfce7;
+    color:#166534;
+    padding:5px 10px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.estado-cancelado{
+    background:#fee2e2;
+    color:#991b1b;
+    padding:5px 10px;
+    border-radius:20px;
+    font-weight:bold;
+}
+.estado-proceso{
+    background:#e9d5ff;
+    color:#6b21a8;
+    padding:5px 10px;
+    border-radius:20px;
+    font-weight:bold;
+}
